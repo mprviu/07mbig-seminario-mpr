@@ -24,6 +24,8 @@
   Mario del Pozo Ruiz
   <br>
   <a href="https://07mbig-seminario-mpr.stackblitz.io" target="_blank">https://07mbig-seminario-mpr.stackblitz.io</a>
+  <br>
+  <a href="https://github.com/mprviu/07mbig-seminario-mpr" target="_blank">https://github.com/mprviu/07mbig-seminario-mpr</a>
   </p>
 
   <h2>Introducción</h2>
@@ -38,7 +40,23 @@
   </p>
 
   <p>
-  Todas las fuentes originales, así como referencias y enlaces al contenido disponible en línea, se encuentran disponibles al final del documento, en su correspondiente apartado.
+  Para la realización del trabajo se han utilizado como principales herramientas:
+  <ul>
+    <li><a href="https://07mbig-seminario-mpr.stackblitz.io/">StackBlitz</a>: Entorno de desarrollo y publicación de aplicaciones web.</li>
+    <li><a href="https://colab.research.google.com/">Google Colaboratory</a>: Entorno gratuito de ejecución de notebooks Jupyter almacenados en Google Drive.</li>
+    <li><a href="https://app.datawrapper.de/">DataWrapper</a>: Servicio online de generación y publicación de gráficos.
+    <li><a href="https://www.tableau.com/">Tableau</a>: Herramienta de escritorio y plataforma online de desarrollo, generación y publicación de gráficos y dashboards.</li>
+    <li><a href="http://d3plus.org/">D3Plus</a>: Librería Javascript para mostrar gráficos dinámicos en páginas web.</li>
+    <li><a href="https://seaborn.pydata.org/">Seaborn</a>: Librería de visualización de datos para Python.</li>
+  </ul>
+  El listado completo se puede encontrar al final del documento.
+  </p>
+  <p>
+  En cada apartado, donde se haga uso de cada herramienta, se justificará tanto el uso como la elección del gráfico concreto empleado.
+  </p>
+
+  <p>
+  Todas las fuentes originales, así como referencias y enlaces al contenido disponible en línea, se encuentran disponibles también al final del documento, en su correspondiente apartado.
   </p>
 
   <h2>Objetivo, audiencia, mensaje</h2>
@@ -174,6 +192,31 @@
 
   <div class="pagebreak"></div>
 
+  <h2>Idiomas</h2>
+
+  <br>
+  <p>
+  En este apartado se hace uso de la herramienta <a href="http://d3plus.org/">D3Plus</a> para, mediante unos gráficos de tipo Radial Matrix, mostrar la distribución del idioma empleado en las clases, por provincia, a lo largo de la década.
+  </p>
+
+  <p>
+  Cada gráfico muestra, con diferentes colores según lo indicado en la leyenda, la evolución de la distribución del idioma en las clases, desde el año 2010, el más interior del gráfico, hasta el año 2020, el más exterior.
+  </p>
+
+  <p>
+  Como se puede ver, el castellano domina tanto en Valencia como en Alicante, aunque en los últimos dos años se puede apreciar un retroceso en favor de la enseñanza en valenciano. En Castellón, sin embargo, se puede ver como la enseñanza en valenciano es mayoritaria ya desde el año 2016.
+  </p>
+
+  <iframe src="idioma-val.html" id="idiomavalframe" scrolling="no" frameborder="0" style="border: none;" width="600" height="300"></iframe>
+  <iframe src="idioma-ali.html" id="idiomaaliframe" scrolling="no" frameborder="0" style="border: none;" width="600" height="300"></iframe>
+  <iframe src="idioma-cas.html" id="idiomacasframe" scrolling="no" frameborder="0" style="border: none;" width="600" height="300"></iframe>
+
+  <p>
+  Los datos para la realización de estos gráficos han sido procesados en un <a href="https://colab.research.google.com/drive/1FqtLJs7fH0t8ofGfLzPgZrFLkd_cbeGY?usp=sharing">notebook Google Colaboratory</a>.
+  </p>
+
+  <div class="pagebreak"></div>
+
   <h2>Número de alumnos por centro</h2>
 
   <br>
@@ -263,6 +306,9 @@
     <li><a href="https://www.tableau.com/">Tableau</a>: Herramienta de escritorio y plataforma online de desarrollo, generación y publicación de gráficos y dashboards.</li>
     <li><a href="https://colab.research.google.com/">Google Colaboratory</a>: Entorno gratuito de ejecución de notebooks Jupyter almacenados en Google Drive.</li>
     <li><a href="https://www.flaticon.com/">Flaticon</a>: Repositorio online de iconos.</li>
+    <li><a href="http://d3plus.org/">D3Plus</a>: Librería Javascript para mostrar gráficos dinámicos en páginas web.</li>
+    <li><a href="http://python.org/">Python</a>: Lenguage de programación empleado en los notebook Colab.</li>
+    <li><a href="https://seaborn.pydata.org/">Seaborn</a>: Librería de visualización de datos para Python.</li>
   </ul>
 
   <h3>Notebooks Google Colaboratory</h3>
@@ -276,7 +322,15 @@
   <ul>
     <li><a href="https://colab.research.google.com/drive/1IiUyPcwwU-y_EwsZrNxyQQhZSVLnqcZ2?usp=sharing">001-centros-2020-datawrapper.ipynb</a>: Procesado dataset "Centros Educativos 2020".</li>
     <li><a href="https://colab.research.google.com/drive/1FqtLJs7fH0t8ofGfLzPgZrFLkd_cbeGY?usp=sharing">002-resumen-escolarizacion.ipynb</a>: Procesado y generación de gráficos del conjunto de datos "Resumen de escolarización".</li>
-  </ul>  
+    </ul>  
+
+    <h3>Enlaces a la página de proyecto de las herramientas online empleadas</h3>
+
+    <ul>
+    <li><a href="https://public.tableau.com/profile/mpr7993">Perfil en Tableau Public</a>: https://public.tableau.com/profile/mpr7993</li>
+    <li><a href="https://github.com/mprviu/07mbig-seminario-mpr">Repositorio en GitHub</a>: https://github.com/mprviu/07mbig-seminario-mpr</li>
+    <li><a href="https://07mbig-seminario-mpr.stackblitz.io">Proyecto en StackBlitz</a>: https://07mbig-seminario-mpr.stackblitz.io</li>
+  </ul>
 
   <h2>Fuentes de datos</h2>
   <br>
