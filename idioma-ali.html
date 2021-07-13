@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/d3plus@2"></script>
+  <script src="idioma.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <script>
+    new d3plus.RadialMatrix()
+      .config({
+          colorScale: "total_matriculados",
+          colorScaleConfig: {
+            legendConfig: {
+              title: "total_matriculados"
+            },
+            scale: "jenks"
+          },
+          colorScalePosition: "left",
+          column: "idioma",
+          data: idioma_data,
+          groupBy: ["anyo", "idioma"],
+          filter: d => d.provincia === "ALICANTE",
+          row: "anyo",
+          title: "Alicante",
+          titleConfig: {
+            fontSize: 20
+          },
+          tooltipConfig: {
+            tbody: [
+              ["total_matriculados", function(d) {
+                value = Math.round(d["total_matriculados"]);
+                if (isNaN(value)) value = 0;
+                return value;
+              }]
+            ]
+          }
+        })
+      .render();
+
+  </script>
+</body>
+
+</html>
